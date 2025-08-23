@@ -11,6 +11,13 @@ class KbRemap < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/rossmacarthur/homebrew-tap/releases/download/kb-remap-0.4.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ce8e789c96080a4510609dbb7d428f1753ce3d84ce7b7595bcd6a344222c74e8"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "c8e9050d685777f1147f6f062388635902a214e57e064dd5849e8d746562ded9"
+    sha256 cellar: :any_skip_relocation, ventura:       "c17036853936301acf88ed57e31b6786d712a61f304e1a65b8337766f7a3955e"
+  end
+
   depends_on "rust" => :build
   depends_on :macos
 
