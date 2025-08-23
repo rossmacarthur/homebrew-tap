@@ -4,6 +4,12 @@ Homebrew formulae for my personal projects.
 
 ## Formulae
 
+### [aq](https://github.com/rossmacarthur/aq)
+
+```sh
+brew install rossmacarthur/tap/aq
+```
+
 ### [kb-remap](https://github.com/rossmacarthur/kb-remap)
 
 ```sh
