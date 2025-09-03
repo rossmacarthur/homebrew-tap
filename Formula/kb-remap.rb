@@ -12,10 +12,10 @@ class KbRemap < Formula
   end
 
   bottle do
-    root_url "https://github.com/rossmacarthur/homebrew-tap/releases/download/kb-remap-0.4.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ce8e789c96080a4510609dbb7d428f1753ce3d84ce7b7595bcd6a344222c74e8"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "c8e9050d685777f1147f6f062388635902a214e57e064dd5849e8d746562ded9"
-    sha256 cellar: :any_skip_relocation, ventura:       "c17036853936301acf88ed57e31b6786d712a61f304e1a65b8337766f7a3955e"
+    root_url "https://github.com/rossmacarthur/homebrew-tap/releases/download/kb-remap-0.5.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "07b6410e0de90e68bd65c029cdac915aecd1838005283226808abdff9cb279d7"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "49b77f7a46e2297014b5b33abda66461beb9982bc90866edfdc7b356499f3517"
+    sha256 cellar: :any_skip_relocation, ventura:       "b6e252bacf2c87faf87c596360b1e037431560790648a4e28560450fa444c184"
   end
 
   depends_on "rust" => :build
