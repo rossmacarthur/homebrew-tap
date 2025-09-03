@@ -1,8 +1,8 @@
 class KbRemap < Formula
   desc "Command-line tool to remap macOS keyboard keys"
   homepage "https://github.com/rossmacarthur/kb-remap"
-  url "https://github.com/rossmacarthur/kb-remap/archive/refs/tags/0.4.1.tar.gz"
-  sha256 "2d062cbc1e0a9aeb336cf0ed524a4b8c9a79c89538253f002d309cddb82c6954"
+  url "https://github.com/rossmacarthur/kb-remap/archive/refs/tags/0.5.0.tar.gz"
+  sha256 "ad24a23f3c49ab8e312ea69e9b71a02b05fc9a018e1a8592d99c4ba5158449d1"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/rossmacarthur/kb-remap.git", branch: "trunk"
 
