@@ -6,6 +6,14 @@ class Powerpack < Formula
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/rossmacarthur/powerpack.git", branch: "trunk"
 
+  bottle do
+    root_url "https://github.com/rossmacarthur/homebrew-tap/releases/download/powerpack-0.8.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "8ee5c1ec00e487844921b9fe0879612109159ceb0d38874b62ece5690b364d03"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "42e5317a3fd53472f14a76ba0b06e9a4e1aee4c85302ce5cd0cc1e2151a1acd7"
+    sha256 cellar: :any_skip_relocation, sequoia:      "8d8b67394957892262bc23d4a7e7bbf5183e7ccdd036df7adb381e9f124e99f5"
+    sha256 cellar: :any,                 x86_64_linux: "26877e201c1c410e6c5a66f3c16361aaf07599f2ec4fb55f6a0f7a2fec41fe0f"
+  end
+
   depends_on "rust" => [:build, :test]
 
   def install
