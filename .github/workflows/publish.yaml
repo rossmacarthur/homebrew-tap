@@ -19,28 +19,30 @@ jobs:
 
     steps:
       - name: Setup Homebrew
-        uses: Homebrew/actions/setup-homebrew@main
+        uses: Homebrew/actions/setup-homebrew@18fcb8e3e06b4247c676c506750dc95ea7226479 # 2026.07.13.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup git
-        uses: Homebrew/actions/git-user-config@main
+        uses: Homebrew/actions/git-user-config@18fcb8e3e06b4247c676c506750dc95ea7226479 # 2026.07.13.1
 
       - name: Pull bottles
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           brew pr-pull \
             --debug \
             --workflows tests.yaml \
             --tap="$GITHUB_REPOSITORY" \
+            --head-sha="$HEAD_SHA" \
             --committer "Ross MacArthur <ross@macarthur.io>" \
             --clean \
             "$PULL_REQUEST"
 
       - name: Push commits
-        uses: Homebrew/actions/git-try-push@main
+        uses: Homebrew/actions/git-try-push@18fcb8e3e06b4247c676c506750dc95ea7226479 # 2026.07.13.1
         with:
           branch: trunk
 
