@@ -1,8 +1,8 @@
 class Aq < Formula
   desc "Command-line tool to extend jq for any format"
   homepage "https://github.com/rossmacarthur/aq"
-  url "https://github.com/rossmacarthur/aq/archive/refs/tags/0.5.0.tar.gz"
-  sha256 "86e01bce8e272ad70b7069dcf43b517b80f12470841b7de4357fb15440399795"
+  url "https://github.com/rossmacarthur/aq/archive/refs/tags/0.5.1.tar.gz"
+  sha256 "78f65ef18801573110517b6b05d9244bd8453f3fefb9994ffb2b3dd12ac4e9e1"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/rossmacarthur/aq.git", branch: "trunk"
 
@@ -18,6 +18,8 @@ class Aq < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    bin.install_symlink bin/"aq" => "yq"
+    bin.install_symlink bin/"aq" => "tq"
   end
 
   test do
