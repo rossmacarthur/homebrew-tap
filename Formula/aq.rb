@@ -1,8 +1,8 @@
 class Aq < Formula
   desc "Command-line tool to extend jq for any format"
   homepage "https://github.com/rossmacarthur/aq"
-  url "https://github.com/rossmacarthur/aq/archive/refs/tags/0.5.1.tar.gz"
-  sha256 "78f65ef18801573110517b6b05d9244bd8453f3fefb9994ffb2b3dd12ac4e9e1"
+  url "https://github.com/rossmacarthur/aq/archive/refs/tags/0.6.0.tar.gz"
+  sha256 "7ea60f73f9e21e6293dd3a6c4823511ed036156e31f20ec68d18d0ea84061557"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/rossmacarthur/aq.git", branch: "trunk"
 
