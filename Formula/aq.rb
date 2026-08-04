@@ -7,10 +7,10 @@ class Aq < Formula
   head "https://github.com/rossmacarthur/aq.git", branch: "trunk"
 
   bottle do
-    root_url "https://github.com/rossmacarthur/homebrew-tap/releases/download/aq-0.5.1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "7b33481fc21515ce596d248e6ab9f24bef8ac4fd022823ce02d0479206afbd5e"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e74d26b4a314632269a4f0417a026f55d923716c5f162981d3f623af092c24d5"
-    sha256 cellar: :any,                 x86_64_linux: "cc89fef71017527a15af22c166fe21b1553a56de2be5bb637a8b654a25b33363"
+    root_url "https://github.com/rossmacarthur/homebrew-tap/releases/download/aq-0.6.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "49d74aac4dc5c3fc3ddf17e412e1a7f798e5b325b606f45fdedf5fd1feeeac51"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "2352d9e12dfffda89dd5bf77b0bba5ea1b4ea0d2cd529bd9f89d265375684a7b"
+    sha256 cellar: :any,                 x86_64_linux: "f552ae6479c818e881bc58d5c791fc9c2586679ef0fc6b749892a9bc2e738d9f"
   end
 
   depends_on "rust" => :build
